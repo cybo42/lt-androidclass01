@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!-- Defines the theme for devices running Android 11 and up.
+ Note that the theme extends a Material theme-->
+<resources>
+    <style name="ApplicationTheme" parent="Theme.AppCompat.Light">
+        <!-- Main theme colors -->
+        <!--   your app branding color for the app bar -->
+        <item name="colorPrimary">@color/primary</item>
+        <!--   darker variant for the status bar and contextual app bars -->
+        <item name="colorPrimaryDark">@color/primary_dark</item>
+        <item name="colorControlNormal">@color/primary_light</item>
+        <!--   theme UI controls like checkboxes and text fields -->
+        <item name="colorAccent">@color/accent</item>
+        <item name="android:textColorPrimary">@color/primary_text</item>
+        <item name="android:textColorSecondary">@color/secondary_text</item>
+        <item name="android:buttonStyle">@style/ButtonAppTheme</item>
+        <item name="android:imageButtonStyle">@style/ButtonAppTheme</item>
+
+
+    </style>
+
+    <!-- Ripple buttons do not work with the current app compat library so define colored buttons
+    using an XML file. The ButtonAppTheme is overwritten in the v21/Theme file with a Ripple based
+    one -->
+
+    <style name="ButtonAppTheme" parent="android:Widget.Button">
+        <item name="android:background">@drawable/button</item>
+    </style>
+
+</resources>

@@ -1,0 +1,18 @@
+[
+    {
+        "merged": "C:\\Course2771\\samples\\Samples\\app\\build\\intermediates\\res\\merged\\debug\\menu\\samples_menu.xml",
+        "source": "C:\\Course2771\\samples\\Samples\\app\\src\\main\\res\\menu\\samples_menu.xml"
+    },
+    {
+        "merged": "C:\\Course2771\\samples\\Samples\\app\\build\\intermediates\\res\\merged\\debug\\menu\\menu.xml",
+        "source": "C:\\Course2771\\samples\\Samples\\app\\src\\main\\res\\menu\\menu.xml"
+    },
+    {
+        "merged": "C:\\Course2771\\samples\\Samples\\app\\build\\intermediates\\res\\merged\\debug\\menu\\station_list_cp_menu.xml",
+        "source": "C:\\Course2771\\samples\\Samples\\app\\src\\main\\res\\menu\\station_list_cp_menu.xml"
+    },
+    {
+        "merged": "C:\\Course2771\\samples\\Samples\\app\\build\\intermediates\\res\\merged\\debug\\menu\\menu_dialog.xml",
+        "source": "C:\\Course2771\\samples\\Samples\\app\\src\\main\\res\\menu\\menu_dialog.xml"
+    }
+]

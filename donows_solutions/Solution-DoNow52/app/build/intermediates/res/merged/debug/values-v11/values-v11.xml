@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- From: file:/C:/Course2771/donows_solutions/Solution-DoNow52/app/src/main/res/values-v11/theme.xml -->
+    <eat-comment/>
+    <style name="Theme.Holo.Light" parent="android:Theme.Holo.Light"/>
+</resources>

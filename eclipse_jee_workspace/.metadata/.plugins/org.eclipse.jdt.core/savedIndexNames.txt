@@ -1,0 +1,5 @@
+INDEX VERSION 1.126+C:\Course2771\eclipse_jee_workspace\.metadata\.plugins\org.eclipse.jdt.core
+1241023601.index
+2467503379.index
+1629608359.index
+243617447.index

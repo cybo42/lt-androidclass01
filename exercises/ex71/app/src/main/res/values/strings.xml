@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Expenses</string>
+    <string name="hello_world">Expenses Application</string>
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_expense_entry">"Expense Entry "</string>
+    <string name="expEdt_str_date">Date</string>
+    <string name="expEdt_str_description">Description</string>
+    <string name="expEdt_str_amount">Amount</string>
+    <string name="expEdt_str_category">Category</string>
+    <string name="expEdt_str_save">Save</string>
+    <string name="menu_str_export">Export</string>
+    <string name="menu_str_add">Add</string>
+    <string name="menu_str_edit">Edit</string>
+    <string name="menu_str_delete">Delete</string>
+    <string name="menu_str_sync">Sync</string>
+    <string name="svc_str_started">Expenses service started</string>
+    <string name="toast_str_start_sync">Synchronizing Expenses</string>
+    <string name="toast_str_exporting_csv">Exporting Expenses as CSV</string>
+    <string name="str_cam_msg">Click the shutter to take a picture</string>
+
+
+</resources>

@@ -1,0 +1,1 @@
+05-20 07:25:04.115: INFO/IntentService(14909): Put to Service. Result: {"expense":[{"description":"Severn bridge toll","amount":"15.0","expenseDate":"1305876297746"},{"description":"Slap up lunch","amount":"2000.0","expenseDate":"1396250633843"}]}

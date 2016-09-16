@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  android:layout_width="match_parent"
+  android:layout_height="match_parent">
+    <EditText android:layout_alignParentRight="true" android:text="EditText1" 
+    	android:layout_height="wrap_content" android:layout_width="wrap_content" android:id="@+id/eT1" />
+    <EditText android:layout_below="@+id/eT1" android:text="EditText2" android:layout_height="wrap_content" 
+    	android:layout_width="wrap_content" android:id="@+id/eT2" android:layout_toLeftOf="@+id/eT1" />
+    <EditText android:layout_below="@+id/eT2" android:text="EditText3" android:layout_height="wrap_content" 
+    	android:layout_width="wrap_content" android:id="@+id/eT3" android:layout_toRightOf="@+id/eT2" />
+    <EditText android:layout_alignParentLeft="true" android:text="EditText4" android:layout_height="wrap_content" android:layout_width="wrap_content" android:id="@+id/eT4" />
+</RelativeLayout>

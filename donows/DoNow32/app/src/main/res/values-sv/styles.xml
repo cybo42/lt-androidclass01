@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+<color name="custom_theme_color">#b0b0ff</color>
+<color name="custom_theme_text_color">#0000ee</color>
+<style name="CustomTheme" parent="android:Theme.Light">
+	<!--  See R.attr for a list of all possible attributes -->
+    <item name="android:windowBackground">@color/custom_theme_color</item>
+    <item name="android:colorBackground">@color/custom_theme_color</item>
+    <item name="android:typeface">sans</item>
+    <item name="android:editTextStyle">@style/custom_edit_text</item>
+    <!--  Effect the title bar of the application -->
+    <item name="android:textColor">@color/custom_theme_text_color</item>
+    <item name="android:textColorPrimary">@color/custom_theme_text_color</item>
+</style>
+
+<!--  Can't directly change the edit text color. Must define a style and use that -->
+<style name="custom_edit_text" parent="@android:style/Widget.EditText">
+	<item name="android:textColor">@color/custom_theme_text_color</item>
+</style>
+
+</resources>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- From: file:/C:/Course2771/donows/DoNow51/app/src/main/res/values/strings.xml -->
+    <eat-comment/>
+    <string name="app_name">DoNow51</string>
+    <string name="hello">Hello World, InternalFileActivity!</string>
+    <string name="main_bt_str_clickme">Click Me</string>
+    <!-- From: file:/C:/Course2771/donows/DoNow51/app/src/main/res/values/theme.xml -->
+    <eat-comment/>
+    <style name="Theme.Holo.Light" parent="android:Theme.Light"/>
+</resources>

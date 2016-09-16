@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Explicitly specify a coloured theme for the Material buttons (material only works in V21
+    even with AppCompat-v7 -->
+    <style name="ButtonAppTheme" parent="android:Widget.Material.Button">
+        <item name="android:backgroundTint">@color/primary</item>
+        <item name="android:padding">5dp</item>
+        <item name="android:elevation">5dp</item>
+        <item name="android:layout_marginBottom">@dimen/activity_vertical_margin</item>
+
+    </style>
+
+    <style name="ImageButtonAppTheme" parent="android:Widget.Material.ImageButton">
+        <item name="android:padding">5dp</item>
+        <item name="android:backgroundTint">@color/primary</item>
+        <item name="android:elevation">5dp</item>
+        <item name="android:layout_marginBottom">@dimen/activity_vertical_margin</item>
+
+    </style>
+
+</resources>

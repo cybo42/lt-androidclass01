@@ -1,0 +1,11 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:app="http://schemas.android.com/apk/res-auto"
+xmlns:tools="http://schemas.android.com/tools" tools:context=".ExpensesListActivity">
+    <item android:id="@+id/menu_add" android:title="@string/menu_str_add" app:showAsAction="ifRoom"/>
+    <item android:id="@+id/menu_sync" android:title="@string/menu_str_sync" app:showAsAction="ifRoom"/>
+    <item android:id="@+id/menu_export" android:title="@string/menu_str_export" app:showAsAction="ifRoom"></item>
+	<!-- This action was not actually in Ex 7.1 it is auto generated when you create the new application
+	we have added it to avoid the need to remove the reference to id/action_settings from the HomeActivity
+	-->
+	<item android:id="@+id/action_settings" android:title="Settings" app:showAsAction="ifRoom"></item>
+</menu>

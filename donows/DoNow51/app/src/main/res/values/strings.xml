@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="hello">Hello World, InternalFileActivity!</string>
+    <string name="app_name">DoNow51</string>
+    <string name="main_bt_str_clickme">Click Me</string>
+</resources>

@@ -1,0 +1,142 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<title>Hints for Exercise 5.1</title>
+<link rel="StyleSheet" href="../css/site.css" type="text/css" media="screen" />
+</head>
+<body>
+<div id="wrapper">
+<div id="header">
+<a href="../index.html"><img src="../images/home.png" id="home" alt="Link to home page" /></a>
+<h1>Hints for Exercise 5.1</h1>
+<br class="clearFloat"/>
+</div>
+<div id="content">
+<div>
+<h2>Hints for Exercise</h2>
+<table id="hints">
+<tr>
+<th>Step</th>
+<th>Code</th>
+</tr>
+
+<!-- Row -->
+<tr>
+<td>DAO Constructor</td>
+<td><pre>
+public DAO(Context context) {
+	// TODO Create an instance of the Database helper
+	// Hint: note that the DatabaseHelper constructor takes a context
+	mDbHelper = new DatabaseHelper(context); 
+}
+</pre></td>
+</tr>
+<!-- End Row -->
+	
+<!-- Row -->
+<tr>
+<td>TODO 2</td>
+<td><pre>
+SQLiteQueryBuilder qb = new SQLiteQueryBuilder();
+</pre></td>
+</tr>
+<!-- End Row -->
+<!-- Row -->
+<tr>
+<td>TODO 3</td>
+<td><pre>
+qb.setTables(Expense.ExpenseItem.TABLE_NAME);
+</pre></td>
+</tr>
+<!-- End Row -->
+<!-- Row -->
+<tr>
+<td>TODO 4</td>
+<td><pre>
+SQLiteDatabase db = mDbHelper.getReadableDatabase();
+</pre></td>
+</tr>
+<!-- End Row -->
+<!-- Row -->
+<tr>
+<td>TODO 5</td>
+<td><pre>
+Cursor c = qb.query(
+	   db,            // The database to query
+	   projection,     // The columns to return from the query (the projection)
+	   selection,     // The columns for the where clause
+	   selectionArgs, 	  // The values for the where clause
+	   null,          // don't group the rows
+	   null,          // don't filter by row groups
+	   Expense.ExpenseItem.DEFAULT_SORT_ORDER        // The sort order
+   );		
+
+</pre></td>
+</tr>
+<!-- End Row -->
+<!-- Row -->
+<tr>
+<td>TODO 7</td>
+<td><pre>
+return c;
+</pre></td>
+</tr>
+<!-- End Row -->
+<!-- Row -->
+<tr>
+<td>TODO 10</td>
+<td><pre>
+dao = new DAO(this);
+</pre></td>
+</tr>
+<!-- End Row -->
+<!-- Row -->
+<tr>
+<td>TODO 11</td>
+<td><pre>
+Cursor cursor = dao.queryExpenses(Expense.ExpenseItem.LIST_PROJECTION, null, null);
+</pre></td>
+</tr>
+<!-- End Row -->
+<!-- Row -->
+<tr>
+<td>TODO 13</td>
+<td><pre>
+SimpleCursorAdapter adapter
+	= new SimpleCursorAdapter(
+			  this,                             // The Context for the ListView
+			  android.R.layout.simple_list_item_single_choice,      // Points to the XML for a list item
+			  cursor,                      // The cursor to get items from
+			  dataColumns,						// The array of Strings holding the names of the data columns to display	
+			  viewIDs						// The array of resource ids used to display the data 
+	  );
+</pre></td>
+</tr>
+<!-- End Row -->
+<!-- Row -->
+<tr>
+<td>TODO 14</td>
+<td><pre>
+mList.setAdapter(adapter);
+</pre></td>
+</tr>
+<!-- End Row -->
+<!-- Row -->
+<tr>
+<td></td>
+<td><pre>
+
+</pre></td>
+</tr>
+<!-- End Row -->
+</table>
+
+</div>
+</div><!-- Content -->
+<div id="footer" class="clearBoth">
+<br /><br /><br />
+</div>
+</div><!-- Wrapper -->
+
+</body>
+</html>

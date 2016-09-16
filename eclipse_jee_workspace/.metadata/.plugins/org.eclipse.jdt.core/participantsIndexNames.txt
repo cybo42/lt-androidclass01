@@ -1,0 +1,3 @@
+INDEX VERSION 1.126
+C:\Course2771\eclipse_jee_workspace\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\3150164844.index
+\ExpensesServer\src

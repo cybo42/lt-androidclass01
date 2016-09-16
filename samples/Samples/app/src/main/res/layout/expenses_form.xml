@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 
+Note on ID's: To ensure the content of R.java is well organized and to avoid ambiguity, the following convention has bee adopted:
+The control ID's are constructed like this:
+LAYOUTNAME_CONTROLTYPE_CONTROLID : eg expEdt_tv_Date
+For this form, the LAYOUTNAME is expEdt (expenses edit)
+The control types are:
+tv: TextView
+et: EditText
+bt: Button
+ib: ImageButton
+
+Where TextView's are used, it is not strictly necessary to use this labeling scheme as they are not likely to be accessed in the code. Doing so just keeps
+R.java organized.
+
+ -->
+<LinearLayout
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  android:layout_width="match_parent"
+  android:layout_height="match_parent" android:orientation="vertical">
+    <TextView android:layout_height="wrap_content" android:layout_width="wrap_content" android:text="@string/expEdt_str_date" android:id="@+id/textView1"></TextView>
+    <DatePicker android:layout_width="wrap_content" android:id="@+id/expEdt_dp_date" android:layout_gravity="center_horizontal" android:layout_height="wrap_content" android:calendarViewShown="false"></DatePicker>
+    <TextView android:layout_height="wrap_content" android:layout_width="wrap_content" android:text="@string/expEdt_str_description" android:id="@+id/textView2"></TextView>
+    <EditText android:layout_height="wrap_content" android:layout_width="match_parent" android:id="@+id/expEdt_et_description">
+        <requestFocus></requestFocus>
+    </EditText>
+    <TextView android:layout_height="wrap_content" android:layout_width="wrap_content" android:text="@string/expEdt_str_amount" android:id="@+id/textView3"></TextView>
+    <EditText android:layout_height="wrap_content" android:layout_width="match_parent" android:inputType="numberDecimal" android:id="@+id/expEdt_et_amount"></EditText>
+    <LinearLayout android:layout_height="wrap_content" android:id="@+id/linearLayout1" android:layout_width="match_parent">
+        <ImageButton android:layout_height="wrap_content" android:layout_width="wrap_content" android:id="@+id/expEdt_ib_receipt" android:src="@drawable/camera"></ImageButton>
+        <Button android:layout_width="wrap_content" android:layout_height="wrap_content" android:id="@+id/expEdt_bt_save" android:text="@string/expEdt_str_save"></Button>
+    </LinearLayout>
+    <ImageView android:layout_height="wrap_content" android:layout_width="wrap_content"  android:id="@+id/expEdt_im_receipt"></ImageView>    
+</LinearLayout>

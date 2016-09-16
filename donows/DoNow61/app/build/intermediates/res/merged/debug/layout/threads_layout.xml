@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_height="fill_parent" android:layout_width="match_parent">
+    <Button android:layout_width="match_parent" android:layout_height="wrap_content" android:id="@+id/main_bt_clickme" android:text="@string/bt_str_simple_thread"></Button>
+    <Button android:layout_height="wrap_content" android:id="@+id/bt_async_task" android:text="@string/bt_str_async_task" android:layout_width="match_parent"></Button>
+    <ProgressBar android:id="@+id/progressBar1" android:layout_height="wrap_content" style="@android:style/Widget.ProgressBar.Horizontal" android:layout_width="match_parent" android:layout_margin="3dip"></ProgressBar>
+    <TextView android:text="" android:id="@+id/tv_result" android:layout_width="wrap_content" android:layout_height="wrap_content"></TextView>        
+</LinearLayout>
+<!-- From: file:/C:/Course2771/donows/DoNow61/app/src/main/res/layout/threads_layout.xml -->

@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+Note on ID's: To ensure the content of R.java is well organized and to avoid ambiguity, the following convention has bee adopted:
+The control ID's are constructed like this:
+LAYOUTNAME_CONTROLTYPE_CONTROLID : eg expEdt_tv_Date
+For this form, the LAYOUTNAME is expEdt (expenses edit)
+The control types are:
+tv: TextView
+et: EditText
+bt: Button
+ib: ImageButton
+
+Where TextView's are used, it is not strictly necessary to use this labeling scheme as they are not likely to be accessed in the code. Doing so just keeps
+R.java organized.
+-->
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true" >
+
+    <LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/background"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/expEdt_str_date" >
+        </TextView>
+
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/expEdt_str_description" >
+        </TextView>
+
+        <EditText
+            android:id="@+id/expEdt_et_description"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="text" >
+
+            <requestFocus>
+            </requestFocus>
+        </EditText>
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/expEdt_str_amount" >
+        </TextView>
+
+        <EditText
+            android:id="@+id/expEdt_et_amount"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="numberDecimal" >
+        </EditText>
+
+        <LinearLayout
+            android:id="@+id/linearLayout2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+
+            <TextView
+                android:id="@+id/textView1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/expEdt_str_lat" >
+            </TextView>
+
+            <EditText
+                android:id="@+id/expEdt_et_lat"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:digits="8"
+                android:text="" >
+            </EditText>
+
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:digits="8"
+                android:text="@string/expEdt_str_lon" >
+            </TextView>
+
+            <EditText
+                android:id="@+id/expEdt_et_lon"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="" >
+            </EditText>
+
+            <Button
+                android:id="@+id/expEdt_bt_fix"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/expEdt_str_fix" >
+            </Button>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/linearLayout1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+
+            <ImageButton
+                android:id="@+id/expEdt_ib_receipt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/camera" >
+            </ImageButton>
+
+            <Button
+                android:id="@+id/expEdt_bt_save"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/expEdt_str_save" >
+            </Button>
+
+            <Button
+                android:id="@+id/expEdt_bt_map"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="@string/expEdt_str_map" >
+            </Button>
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/expEdt_im_receipt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:contentDescription="@string/expEdt_str_desc_show_receipt" >
+        </ImageView>
+    </LinearLayout>
+
+</ScrollView>

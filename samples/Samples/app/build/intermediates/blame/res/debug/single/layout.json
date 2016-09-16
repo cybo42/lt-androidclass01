@@ -1,0 +1,114 @@
+[
+    {
+        "merged": "C:\\Course2771\\samples\\Samples\\app\\build\\intermediates\\res\\merged\\debug\\layout\\relative_layout.xml",
+        "source": "C:\\Course2771\\samples\\Samples\\app\\src\\main\\res\\layout\\relative_layout.xml"
+    },
+    {
+        "merged": "C:\\Course2771\\samples\\Samples\\app\\build\\intermediates\\res\\merged\\debug\\layout\\expenses_list_item.xml",
+        "source": "C:\\Course2771\\samples\\Samples\\app\\src\\main\\res\\layout\\expenses_list_item.xml"
+    },
+    {
+        "merged": "C:\\Course2771\\samples\\Samples\\app\\build\\intermediates\\res\\merged\\debug\\layout\\dialog_layout.xml",
+        "source": "C:\\Course2771\\samples\\Samples\\app\\src\\main\\res\\layout\\dialog_layout.xml"
+    },
+    {
+        "merged": "C:\\Course2771\\samples\\Samples\\app\\build\\intermediates\\res\\merged\\debug\\layout\\expenses_form.xml",
+        "source": "C:\\Course2771\\samples\\Samples\\app\\src\\main\\res\\layout\\expenses_form.xml"
+    },
+    {
+        "merged": "C:\\Course2771\\samples\\Samples\\app\\build\\intermediates\\res\\merged\\debug\\layout\\main.xml",
+        "source": "C:\\Course2771\\samples\\Samples\\app\\src\\main\\res\\layout\\main.xml"
+    },
+    {
+        "merged": "C:\\Course2771\\samples\\Samples\\app\\build\\intermediates\\res\\merged\\debug\\layout\\fragment_activity_layout.xml",
+        "source": "C:\\Course2771\\samples\\Samples\\app\\src\\main\\res\\layout\\fragment_activity_layout.xml"
+    },
+    {
+        "merged": "C:\\Course2771\\samples\\Samples\\app\\build\\intermediates\\res\\merged\\debug\\layout\\http_request_layout.xml",
+        "source": "C:\\Course2771\\samples\\Samples\\app\\src\\main\\res\\layout\\http_request_layout.xml"
+    },
+    {
+        "merged": "C:\\Course2771\\samples\\Samples\\app\\build\\intermediates\\res\\merged\\debug\\layout\\boot_completed_layout.xml",
+        "source": "C:\\Course2771\\samples\\Samples\\app\\src\\main\\res\\layout\\boot_completed_layout.xml"
+    },
+    {
+        "merged": "C:\\Course2771\\samples\\Samples\\app\\build\\intermediates\\res\\merged\\debug\\layout\\event_handler_layout.xml",
+        "source": "C:\\Course2771\\samples\\Samples\\app\\src\\main\\res\\layout\\event_handler_layout.xml"
+    },
+    {
+        "merged": "C:\\Course2771\\samples\\Samples\\app\\build\\intermediates\\res\\merged\\debug\\layout\\component.xml",
+        "source": "C:\\Course2771\\samples\\Samples\\app\\src\\main\\res\\layout\\component.xml"
+    },
+    {
+        "merged": "C:\\Course2771\\samples\\Samples\\app\\build\\intermediates\\res\\merged\\debug\\layout\\list_item.xml",
+        "source": "C:\\Course2771\\samples\\Samples\\app\\src\\main\\res\\layout\\list_item.xml"
+    },
+    {
+        "merged": "C:\\Course2771\\samples\\Samples\\app\\build\\intermediates\\res\\merged\\debug\\layout\\stations_list.xml",
+        "source": "C:\\Course2771\\samples\\Samples\\app\\src\\main\\res\\layout\\stations_list.xml"
+    },
+    {
+        "merged": "C:\\Course2771\\samples\\Samples\\app\\build\\intermediates\\res\\merged\\debug\\layout\\frame_layout.xml",
+        "source": "C:\\Course2771\\samples\\Samples\\app\\src\\main\\res\\layout\\frame_layout.xml"
+    },
+    {
+        "merged": "C:\\Course2771\\samples\\Samples\\app\\build\\intermediates\\res\\merged\\debug\\layout\\activity_dialog_fragment.xml",
+        "source": "C:\\Course2771\\samples\\Samples\\app\\src\\main\\res\\layout\\activity_dialog_fragment.xml"
+    },
+    {
+        "merged": "C:\\Course2771\\samples\\Samples\\app\\build\\intermediates\\res\\merged\\debug\\layout\\threads_layout.xml",
+        "source": "C:\\Course2771\\samples\\Samples\\app\\src\\main\\res\\layout\\threads_layout.xml"
+    },
+    {
+        "merged": "C:\\Course2771\\samples\\Samples\\app\\build\\intermediates\\res\\merged\\debug\\layout\\activity_widget_examples.xml",
+        "source": "C:\\Course2771\\samples\\Samples\\app\\src\\main\\res\\layout\\activity_widget_examples.xml"
+    },
+    {
+        "merged": "C:\\Course2771\\samples\\Samples\\app\\build\\intermediates\\res\\merged\\debug\\layout\\linear_layout.xml",
+        "source": "C:\\Course2771\\samples\\Samples\\app\\src\\main\\res\\layout\\linear_layout.xml"
+    },
+    {
+        "merged": "C:\\Course2771\\samples\\Samples\\app\\build\\intermediates\\res\\merged\\debug\\layout\\menu_layout.xml",
+        "source": "C:\\Course2771\\samples\\Samples\\app\\src\\main\\res\\layout\\menu_layout.xml"
+    },
+    {
+        "merged": "C:\\Course2771\\samples\\Samples\\app\\build\\intermediates\\res\\merged\\debug\\layout\\table_layout.xml",
+        "source": "C:\\Course2771\\samples\\Samples\\app\\src\\main\\res\\layout\\table_layout.xml"
+    },
+    {
+        "merged": "C:\\Course2771\\samples\\Samples\\app\\build\\intermediates\\res\\merged\\debug\\layout\\examples.xml",
+        "source": "C:\\Course2771\\samples\\Samples\\app\\src\\main\\res\\layout\\examples.xml"
+    },
+    {
+        "merged": "C:\\Course2771\\samples\\Samples\\app\\build\\intermediates\\res\\merged\\debug\\layout\\click_me_styled.xml",
+        "source": "C:\\Course2771\\samples\\Samples\\app\\src\\main\\res\\layout\\click_me_styled.xml"
+    },
+    {
+        "merged": "C:\\Course2771\\samples\\Samples\\app\\build\\intermediates\\res\\merged\\debug\\layout\\gallery_layout.xml",
+        "source": "C:\\Course2771\\samples\\Samples\\app\\src\\main\\res\\layout\\gallery_layout.xml"
+    },
+    {
+        "merged": "C:\\Course2771\\samples\\Samples\\app\\build\\intermediates\\res\\merged\\debug\\layout\\camera_emulator_layout.xml",
+        "source": "C:\\Course2771\\samples\\Samples\\app\\src\\main\\res\\layout\\camera_emulator_layout.xml"
+    },
+    {
+        "merged": "C:\\Course2771\\samples\\Samples\\app\\build\\intermediates\\res\\merged\\debug\\layout\\click_me.xml",
+        "source": "C:\\Course2771\\samples\\Samples\\app\\src\\main\\res\\layout\\click_me.xml"
+    },
+    {
+        "merged": "C:\\Course2771\\samples\\Samples\\app\\build\\intermediates\\res\\merged\\debug\\layout\\two_item_list.xml",
+        "source": "C:\\Course2771\\samples\\Samples\\app\\src\\main\\res\\layout\\two_item_list.xml"
+    },
+    {
+        "merged": "C:\\Course2771\\samples\\Samples\\app\\build\\intermediates\\res\\merged\\debug\\layout\\samples_selection.xml",
+        "source": "C:\\Course2771\\samples\\Samples\\app\\src\\main\\res\\layout\\samples_selection.xml"
+    },
+    {
+        "merged": "C:\\Course2771\\samples\\Samples\\app\\build\\intermediates\\res\\merged\\debug\\layout\\camera_launcher_layout.xml",
+        "source": "C:\\Course2771\\samples\\Samples\\app\\src\\main\\res\\layout\\camera_launcher_layout.xml"
+    },
+    {
+        "merged": "C:\\Course2771\\samples\\Samples\\app\\build\\intermediates\\res\\merged\\debug\\layout\\notification_layout.xml",
+        "source": "C:\\Course2771\\samples\\Samples\\app\\src\\main\\res\\layout\\notification_layout.xml"
+    }
+]

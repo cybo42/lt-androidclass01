@@ -1,0 +1,99 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<title>Hints for Exercise 2.1</title>
+<link rel="StyleSheet" href="../css/site.css" type="text/css" media="screen" />
+</head>
+<body>
+<div id="wrapper">
+<div id="header">
+<a href="../index.html"><img src="../images/home.png" id="home" alt="Link to home page" /></a>
+<h1>Hints for Exercise 2.1</h1>
+<br class="clearFloat"/>
+</div>
+<div id="content">
+<div >
+<h2>Hints for Exercise</h2>
+<table id="hints">
+<tr>
+<th>Step</th>
+<th>Code</th>
+</tr>
+<tr>
+<td>Constructor</td>
+<td><pre>
+public SyncService(){
+	super();
+}
+</pre></td>
+</tr>
+<tr>
+<td>Constructor 2</td>
+<td><pre>
+public SyncService(){
+	super("SyncService");
+}
+</pre></td>
+</tr>
+<tr>
+<td>Code check 1</td>
+<td><pre>
+package com.ltree.expenses;
+
+import android.app.IntentService;
+import android.content.Intent;
+import android.util.Log;
+
+public class SyncService extends IntentService {
+
+	private static final String TAG="IntentService";
+
+	public SyncService(){
+		super("SyncService");
+	}
+	
+	@Override
+	public void onCreate() {
+		super.onCreate();
+		Log.i(TAG, "onCreate() called");
+	}
+
+
+	
+	@Override
+	protected void onHandleIntent(Intent arg0) {
+		Log.i(TAG,"Processing started");
+		Log.i(TAG,"Processing finished");
+	}
+
+}
+
+</pre></td>
+</tr>
+<tr>
+<td>Sleep</td>
+<td><pre>
+@Override
+protected void onHandleIntent(Intent arg0) {
+	Log.i(TAG,"Processing started");
+	try {
+		Thread.sleep(30000);
+	} catch (InterruptedException e) {
+		// TODO Auto-generated catch block
+		e.printStackTrace();
+	}
+	Log.i(TAG,"Processing finished");
+}
+</pre></td>
+</tr>
+</table>
+
+</div>
+</div><!-- Content -->
+<div id="footer" class="clearBoth">
+<br><br><br>
+</div>
+</div><!-- Wrapper -->
+
+</body>
+</html>

@@ -1,0 +1,145 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<title>Hints for Exercise 6.2</title>
+<link rel="StyleSheet" href="../css/site.css" type="text/css" media="screen" />
+</head>
+<body>
+<div id="wrapper">
+<div id="header">
+<a href="../index.html"><img src="../images/home.png" id="home" alt="Link to home page" /></a>
+<h1>Hints for Exercise 6.2</h1>
+<br class="clearFloat"/>
+</div>
+<div id="content">
+<div>
+<h2>Hints for Exercise</h2>
+<table id="hints">
+<tr>
+<th>Step</th>
+<th>Code</th>
+</tr>
+
+<!-- Row -->
+<tr>
+<td>TODO 1</td>
+<td><pre>
+class ReceiptButtonListener implements View.OnClickListener
+</pre></td>
+</tr>
+<!-- End Row -->
+<!-- Row -->
+<tr>
+<td>TODO 2</td>
+<td><pre>
+public void onClick(View v) {
+</pre></td>
+</tr>
+<!-- End Row -->
+<!-- Row -->
+<tr>
+<td>TODO 3</td>
+<td><pre>
+Intent intent = new Intent(MediaStore.ACTION_IMAGE_CAPTURE);
+</pre></td>
+</tr>
+<!-- End Row -->
+<!-- Row -->
+<tr>
+<td>TODO 4</td>
+<td><pre>
+File baseDir = Environment.getExternalStoragePublicDirectory(Environment.DIRECTORY_PICTURES);
+</pre></td>
+</tr>
+<!-- End Row -->
+<!-- Row -->
+<tr>
+<td>TODO 5</td>
+<td><pre>
+File receiptsDir = new File(baseDir, "reciepts");
+</pre></td>
+</tr>
+<!-- End Row -->
+<!-- Row -->
+<tr>
+<td>TODO 7</td>
+<td><pre>
+if(!receiptsDir.mkdirs()){
+</pre></td>
+</tr>
+<!-- End Row -->
+<!-- Row -->
+<tr>
+<td>TODO 8</td>
+<td><pre>
+mReceiptFilePath = new File(receiptsDir, "receipt" + mExpenseId + ".jpg");
+</pre></td>
+</tr>
+<!-- End Row -->
+<!-- Row -->
+<tr>
+<td>TODO 9</td>
+<td><pre>
+Uri uri = Uri.fromFile(mReceiptFilePath);
+</pre></td>
+</tr>
+<!-- End Row -->
+<!-- Row -->
+<tr>
+<td>TODO 10</td>
+<td><pre>
+intent.putExtra(MediaStore.EXTRA_OUTPUT, uri);
+</pre></td>
+</tr>
+<!-- End Row -->
+<!-- Row -->
+<tr>
+<td>TODO 11</td>
+<td><pre>
+intent.putExtra(MediaStore.EXTRA_VIDEO_QUALITY, 1);
+</pre></td>
+</tr>
+<!-- End Row -->
+<!-- Row -->
+<tr>
+<td>TODO 12</td>
+<td><pre>
+startActivityForResult(intent, CAM_REQUEST_CODE);
+</pre></td>
+</tr>
+<!-- End Row -->
+
+<!-- Row -->
+<tr>
+<td>TODO 21</td>
+<td><pre>
+mReceiptButton.setOnClickListener(new ReceiptButtonListener());
+</pre></td>
+</tr>
+<!-- End Row -->
+
+<!-- Row -->
+<tr>
+<td>Intent Filter </td>
+<td><pre>
+&lt;activity android:name="com.ltree.camera.CameraEmulatorActivity">     
+	&lt;intent-filter>
+		&lt;action android:name="android.media.action.IMAGE_CAPTURE" />
+		&lt;category android:name="android.intent.category.DEFAULT" />
+	&lt;/intent-filter>           
+&lt;/activity>
+</pre></td>
+</tr>
+<!-- End Row -->
+
+</table>
+
+</div>
+</div><!-- Content -->
+<div id="footer" class="clearBoth">
+<br /><br /><br />
+</div>
+</div><!-- Wrapper -->
+
+</body>
+</html>

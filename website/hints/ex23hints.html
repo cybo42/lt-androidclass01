@@ -1,0 +1,83 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<title>Hints for Exercise 2.3</title>
+<link rel="StyleSheet" href="../css/site.css" type="text/css" media="screen" />
+</head>
+<body>
+<div id="wrapper">
+<div id="header">
+<a href="../index.html"><img src="../images/home.png" id="home" alt="Link to home page" /></a>
+<h1>Hints for Exercise 2.3</h1>
+<br class="clearFloat"/>
+</div>
+<div id="content">
+<div>
+<h2>Hints for Exercise</h2>
+<table id="hints">
+<tr>
+<th>Step</th>
+<th>Code</th>
+</tr>
+<tr>
+<td>Constructor</td>
+<td><pre>
+public ExpensesListActivityTest() {
+	super(ExpensesListActivity.class);
+}
+</pre></td>
+</tr>
+<tr>
+<td>Fields</td>
+<td><pre>
+private ExpensesListActivity mActivity;
+private TextView mHelloTextView;
+private String helloString;
+</pre></td>
+</tr>
+<tr>
+<td>Setup</td>
+<td><pre>
+@Override
+protected void setUp() throws Exception {
+	super.setUp();
+}
+</pre></td>
+</tr>
+<tr>
+<td>Content of setUp method</td>
+<td><pre>
+mActivity = this.getActivity();
+mHelloTextView = (TextView) mActivity
+		.findViewById(com.ltree.expenses.R.id.main_tv_hello);
+helloString = mActivity.getString(com.ltree.expenses.R.string.hello);
+</pre></td>
+</tr>
+<tr>
+<td>Test pre-conditions</td>
+<td><pre>
+public void testPreconditions() {
+	assertNotNull(helloString);
+}
+</pre></td>
+</tr>
+<tr>
+<td>Test Hello</td>
+<td><pre>
+public void testHello() {
+	assertEquals(helloString, (String) mHelloTextView.getText());
+}
+</pre></td>
+</tr>
+
+
+</table>
+</div>
+</div><!-- Content -->
+<div id="footer" class="clearBoth">
+<br /><br /><br />
+</div>
+</div><!-- Wrapper -->
+
+</body>
+</html>

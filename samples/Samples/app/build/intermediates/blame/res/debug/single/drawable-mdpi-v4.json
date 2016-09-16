@@ -1,0 +1,30 @@
+[
+    {
+        "merged": "C:\\Course2771\\samples\\Samples\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi-v4\\icon.png",
+        "source": "C:\\Course2771\\samples\\Samples\\app\\src\\main\\res\\drawable-mdpi\\icon.png"
+    },
+    {
+        "merged": "C:\\Course2771\\samples\\Samples\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi-v4\\ic_menu_sync.png",
+        "source": "C:\\Course2771\\samples\\Samples\\app\\src\\main\\res\\drawable-mdpi\\ic_menu_sync.png"
+    },
+    {
+        "merged": "C:\\Course2771\\samples\\Samples\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi-v4\\ic_alert_dialog.png",
+        "source": "C:\\Course2771\\samples\\Samples\\app\\src\\main\\res\\drawable-mdpi\\ic_alert_dialog.png"
+    },
+    {
+        "merged": "C:\\Course2771\\samples\\Samples\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi-v4\\camera.png",
+        "source": "C:\\Course2771\\samples\\Samples\\app\\src\\main\\res\\drawable-mdpi\\camera.png"
+    },
+    {
+        "merged": "C:\\Course2771\\samples\\Samples\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi-v4\\ic_app.png",
+        "source": "C:\\Course2771\\samples\\Samples\\app\\src\\main\\res\\drawable-mdpi\\ic_app.png"
+    },
+    {
+        "merged": "C:\\Course2771\\samples\\Samples\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi-v4\\emo_im_yelling.png",
+        "source": "C:\\Course2771\\samples\\Samples\\app\\src\\main\\res\\drawable-mdpi\\emo_im_yelling.png"
+    },
+    {
+        "merged": "C:\\Course2771\\samples\\Samples\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi-v4\\ic_action_search.png",
+        "source": "C:\\Course2771\\samples\\Samples\\app\\src\\main\\res\\drawable-mdpi\\ic_action_search.png"
+    }
+]

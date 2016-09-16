@@ -1,0 +1,18 @@
+[
+    {
+        "merged": "C:\\Course2771\\samples\\Samples\\app\\build\\intermediates\\res\\merged\\debug\\drawable-ldpi-v4\\ic_app.png",
+        "source": "C:\\Course2771\\samples\\Samples\\app\\src\\main\\res\\drawable-ldpi\\ic_app.png"
+    },
+    {
+        "merged": "C:\\Course2771\\samples\\Samples\\app\\build\\intermediates\\res\\merged\\debug\\drawable-ldpi-v4\\camera.png",
+        "source": "C:\\Course2771\\samples\\Samples\\app\\src\\main\\res\\drawable-ldpi\\camera.png"
+    },
+    {
+        "merged": "C:\\Course2771\\samples\\Samples\\app\\build\\intermediates\\res\\merged\\debug\\drawable-ldpi-v4\\icon.png",
+        "source": "C:\\Course2771\\samples\\Samples\\app\\src\\main\\res\\drawable-ldpi\\icon.png"
+    },
+    {
+        "merged": "C:\\Course2771\\samples\\Samples\\app\\build\\intermediates\\res\\merged\\debug\\drawable-ldpi-v4\\ic_menu_sync.png",
+        "source": "C:\\Course2771\\samples\\Samples\\app\\src\\main\\res\\drawable-ldpi\\ic_menu_sync.png"
+    }
+]

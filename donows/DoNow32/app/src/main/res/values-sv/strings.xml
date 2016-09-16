@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Utgifter</string>
+    <string name="title_activity_expense_entry">"Utgifter"</string>
+    <string name="expEdt_str_date">Datum</string>
+    <string name="expEdt_str_description">Beskrivning</string>
+    <string name="expEdt_str_amount">Summa</string>
+    <string name="expEdt_str_category">Kategori</string>
+    <string name="expEdt_str_save">Spara</string>
+    <string name="expEdt_str_add">Lägg till</string>
+    <string name="menu_str_add">Lägg till</string>
+    <string name="menu_str_edit">Ändra</string>
+    <string name="menu_str_delete">Ta bort</string>
+    <string name="menu_str_sync">Synka</string>
+
+    <string name="alert_dialog_ok">OK</string>
+    <string name="alert_dialog_cancel">Avbryt</string>
+    <string name="toast_synchronizing">Utgifterna synkroniseras mot servern...</string>
+
+    <string name="expEdt_str_lat">Lat.</string>
+    <string name="expEdt_str_lon">Lon.</string>
+    <string name="expEdt_str_fix">Uppdatera</string>    
+</resources>

@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="hello">Hello Course 577</string>
+    <string name="app_name">Do Now 41</string>
+    <string name="toast_popup">Your toast is ready</string>
+    <string name="str_create_notification">Create Notification</string>    
+</resources>

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="hello">Only push the button if you wish to populate the Expenses content provider with dummy data.</string>
+    <string name="app_name">CreateExpenseData</string>
+    <string name="strButCreateDemoData">Create Sample Expense Data</string>
+
+</resources>

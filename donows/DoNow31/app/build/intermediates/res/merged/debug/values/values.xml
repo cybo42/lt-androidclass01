@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- From: file:/C:/Course2771/donows/DoNow31/app/src/main/res/values/strings.xml -->
+    <eat-comment/>
+    <string name="app_name">WeatherApp</string>
+    <string name="hello">Hello World, WeatherActivity!</string>
+    <string name="str_sel_station">Select Station</string>
+    <string name="str_wind_speed">Wind Speed</string>
+</resources>

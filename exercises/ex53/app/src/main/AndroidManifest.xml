@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.ltree.expenses" >
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_app"
+        android:label="@string/app_name"
+        android:theme="@style/ApplicationTheme" >
+    	<!--  NOTE: provider must be a child of application (not an activity) -->
+        <provider
+            android:authorities="com.ltree.expenses.expenses"
+            android:name=".data.ExpensesProvider"
+            android:exported="false"></provider>
+
+        <activity android:name=".ExpensesListActivity"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <service
+            android:name=".SyncService"
+            android:exported="false" >
+        </service>
+
+        <activity
+            android:name=".ExpenseEntryActivity"
+            android:label="@string/title_activity_expense_entry"
+            android:parentActivityName=".ExpensesListActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.ltree.expenses.ExpensesListActivity" />
+        </activity>
+    </application>
+
+</manifest>

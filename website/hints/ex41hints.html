@@ -1,0 +1,106 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<title>Hints for Exercise 4.1</title>
+<link rel="StyleSheet" href="../css/site.css" type="text/css" media="screen" />
+</head>
+<body>
+<div id="wrapper">
+<div id="header">
+<a href="../index.html"><img src="../images/home.png" id="home" alt="Link to home page" /></a>
+<h1>Hints for Exercise 4.1</h1>
+<br class="clearFloat"/>
+</div>
+<div id="content">
+<div>
+<h2>Hints for Exercise</h2>
+<table id="hints">
+<tr>
+<th>Step</th>
+<th>Code</th>
+</tr>
+<tr>
+<td>onCreateOptionsMenu</td>
+<td><pre>
+@Override
+public boolean onCreateOptionsMenu(Menu menu) {
+
+}
+</pre></td>
+</tr>
+<tr>
+<td>getMenuInflater</td>
+<td><pre>
+@Override
+public boolean onCreateOptionsMenu(Menu menu) {
+	MenuInflater inflater = getMenuInflater();
+}	
+</pre></td>
+</tr>
+<tr>
+<td>onCreateOptionsMenu complete</td>
+<td><pre>
+@Override
+public boolean onCreateOptionsMenu(Menu menu) {
+	MenuInflater inflater = getMenuInflater();
+	inflater.inflate(R.menu.option_menu, menu);
+	return true;
+}	
+</pre></td>
+</tr>
+<tr>
+<td>onOptionsItemSelected</td>
+<td><pre>
+@Override
+public boolean onOptionsItemSelected(MenuItem item) {	
+	
+	switch(item.getItemId()){
+	case R.id.menu_sync:
+		startSync();
+		return true;
+	case R.id.menu_add:
+		addExpenseItem();
+		return true;
+	}	
+}	
+</pre></td>
+</tr>
+<tr>
+<td>onOptionsItemSelected default</td>
+<td><pre>
+@Override
+public boolean onOptionsItemSelected(MenuItem item) {	
+	
+	switch(item.getItemId()){
+	case R.id.menu_sync:
+		startSync();
+		return true;
+	case R.id.menu_add:
+		addExpenseItem();
+		return true;
+	default:
+		return super.onOptionsItemSelected(item);
+	}	
+}
+</pre></td>
+</tr>
+
+<tr>
+<td>Toast</td>
+<td><pre>
+private void addExpenseItem() {
+	Toast t = Toast.makeText(this, "addExpenseItem", Toast.LENGTH_LONG);
+	t.show();		
+}
+</pre></td>
+</tr>
+</table>
+</div>
+</div><!-- Content -->
+<div id="footer" class="clearBoth">
+<br /><br /><br />
+</div>
+</div><!-- Wrapper -->
+
+</body>
+</html>

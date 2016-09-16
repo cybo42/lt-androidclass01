@@ -1,0 +1,13 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".ExpensesListActivity">
+    <item
+        android:id="@+id/menu_add"
+        android:title="@string/menu_str_add" />
+
+    <item
+        android:id="@+id/menu_sync"
+        android:title="@string/menu_str_sync" />
+
+</menu>

@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  android:layout_width="match_parent"
+  android:layout_height="match_parent" android:orientation="vertical">
+<!--   
+== This is the TextView with not style attribute ==
+== below is the one using style.==
+== style defined in values/styles.xml ==
+
+    <TextView android:text="@string/str_sel_station" 
+    	android:layout_width="match_parent" 
+    	android:id="@+id/textView1" 
+    	android:layout_height="wrap_content"
+    	android:textColor="#0000ff"
+    	android:background="#000033"></TextView>
+ -->    
+     <TextView style="@style/custom_text_view_style"
+     	android:text="@string/str_sel_station" 
+    	android:id="@+id/textView1" >
+	</TextView>
+ 	
+    <EditText 
+    	android:id="@+id/editText1" 
+    	android:layout_width="match_parent" 
+    	android:text="EditText" 
+    	android:layout_height="wrap_content"></EditText>
+</LinearLayout>

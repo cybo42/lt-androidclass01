@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.ltree.android.snippets"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="16"
+        android:targetSdkVersion="21" />
+
+    <android:uses-permission
+        android:name="android.permission.WRITE_EXTERNAL_STORAGE"
+        android:maxSdkVersion="18" />
+    <android:uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <android:uses-permission
+        android:name="android.permission.READ_EXTERNAL_STORAGE"
+        android:maxSdkVersion="18" />
+
+    <application
+        android:icon="@drawable/icon"
+        android:label="@string/app_name"
+        android:theme="@style/Theme.Holo.Light" >
+        <activity
+            android:name="lt.samples.HomeActivity"
+            android:label="@string/app_name" >
+        </activity>
+        <activity android:name="lt.samples.ShowToastActivity" >
+        </activity>
+        <activity android:name="lt.samples.NotificationActivity" >
+        </activity>
+        <activity android:name="lt.samples.BookmarksActivity" />
+        <activity android:name="lt.samples.BookmarksLoaderActivity" />
+        <activity android:name="lt.samples.BootCompletedActivity" />
+        <activity android:name="lt.samples.DialogActivity" >
+        </activity>
+        <activity android:name="lt.samples.EventHandlerActivity" >
+        </activity>
+        <activity android:name="lt.samples.MenuActivity" >
+        </activity>
+        <activity android:name="lt.samples.GalleryActivity" >
+        </activity>
+        <activity android:name="lt.samples.FrameActivity" >
+        </activity>
+        <activity android:name="lt.fragments.FragmentActivity" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+            </intent-filter>
+        </activity>
+        <activity android:name="lt.samples.StationListActivity" >
+        </activity>
+        <activity android:name="lt.samples.StationsActivity" >
+        </activity>
+        <activity android:name="lt.samples.StorageActivity" >
+        </activity>
+        <activity android:name="lt.samples.DatabaseActivity" >
+        </activity>
+        <activity android:name="lt.samples.ThreadedActivity" >
+        </activity>
+        <activity android:name="lt.samples.StationListCPActivity" >
+        </activity>
+        <activity android:name="lt.samples.HttpRequestActivity" >
+        </activity>
+        <activity android:name="lt.samples.JSONActivity" >
+        </activity>
+        <activity android:name="lt.samples.SamplesSelectionActivity" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name="lt.samples.CameraLauncherActivity" >
+        </activity>
+        <activity android:name="lt.samples.CameraEmulatorActivity" >
+        </activity>
+        <activity android:name="lt.samples.VersionCheckActivity" >
+        </activity>
+        <activity android:name="lt.samples.ListContactsActivity" >
+        </activity>
+        <activity android:name="lt.samples.ShowDatabaseInListActivity" >
+        </activity>
+
+        <provider
+            android:name="lt.samples.db.SamplesCP"
+            android:authorities="com.ltree.weather" >
+        </provider>
+
+        <receiver android:name="lt.samples.BootCompletedReceiver" >
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED" />
+            </intent-filter>
+        </receiver>
+
+        <service android:name="lt.samples.SimpleIntentService" >
+        </service>
+
+        <activity
+            android:name="lt.samples.WidgetExamples"
+            android:label="@string/title_activity_widget_examples"
+            android:theme="@style/Theme.Holo.Light" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="lt.samples.DialogFragmentActivity"
+            android:label="@string/title_activity_dialog_fragment" >
+        </activity>
+    </application>
+
+</manifest>

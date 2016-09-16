@@ -1,0 +1,131 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<title>Hints for Exercise 4.2</title>
+<link rel="StyleSheet" href="../css/site.css" type="text/css" media="screen" />
+</head>
+<body>
+<div id="wrapper">
+<div id="header">
+<a href="../index.html"><img src="../images/home.png" id="home" alt="Link to home page" /></a>
+<h1>Hints for Exercise 4.2</h1>
+<br class="clearFloat"/>
+</div>
+<div id="content">
+<div>
+<h2>Hints for Exercise</h2>
+<table id="hints">
+<tr>
+<th>Step</th>
+<th>Code</th>
+</tr>
+<tr>
+<td>TODO 3</td>
+<td><pre>
+mExpensesArrayList = getExpensesArrayList(); 
+</pre></td>
+</tr>
+
+<tr>
+<td>TODO 4</td>
+<td><pre>
+mExpensesAdapter = new ArrayAdapter<String>(this, 
+                                             android.R.layout.simple_list_item_single_choice, 
+                                            mExpensesArrayList);
+</pre></td>
+</tr>
+
+<tr>
+<td>TODO 5</td>
+<td><pre>
+mList.setAdapter(mExpensesAdapter);
+</pre></td>
+</tr>
+
+
+
+
+
+<!-- Row -->
+<tr>
+<td>Add list item click listener</td>
+<td><pre>
+mList.setOnItemClickListener(new ListClickHandler());
+</pre></td>
+</tr>
+<!-- End Row -->
+<!-- Row -->
+<tr>
+<td>onListItemClick body 1</td>
+<td><pre>
+String expense = mExpensesArrayList.get(position);
+</pre></td>
+</tr>
+<!-- End Row -->
+
+<!-- Row -->
+<tr>
+<td>onListItemClick body 2</td>
+<td><pre>
+Intent intent = new Intent(this, ExpenseEntryActivity.class);
+</pre></td>
+</tr>
+<!-- End Row -->
+<!-- Row -->
+<tr>
+<td>onListItemClick body 3</td>
+<td><pre>
+intent.putExtra(Constants.EXPENSE_DESCRIPTION, expense);
+</pre></td>
+</tr>
+<!-- End Row -->
+<!-- Row -->
+<tr>
+<td>onListItemClick body 4</td>
+<td><pre>
+startActivity(intent);
+</pre></td>
+</tr>
+<!-- End Row -->
+<!-- Row -->
+<tr>
+<td>TODO 12</td>
+<td><pre>
+mDescription = (EditText)findViewById(R.id.expEdt_et_description);
+</pre></td>
+</tr>
+<!-- End Row -->
+<!-- Row -->
+<tr>
+<td>TODO 13</td>
+<td><pre>
+Intent intent = getIntent(); 
+</pre></td>
+</tr>
+<!-- End Row -->
+<!-- Row -->
+<tr>
+<td>TODO 14</td>
+<td><pre>
+String description = intent.getStringExtra(Constants.EXPENSE_DESCRIPTION);
+</pre></td>
+</tr>
+<!-- End Row -->
+<!-- Row -->
+<tr>
+<td>TODO 15</td>
+<td><pre>
+mDescription.setText(description);
+</pre></td>
+</tr>
+<!-- End Row -->
+</table>
+</div>
+</div><!-- Content -->
+<div id="footer" class="clearBoth">
+<br /><br /><br />
+</div>
+</div><!-- Wrapper -->
+
+</body>
+</html>

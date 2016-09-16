@@ -1,0 +1,173 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<title>Hints for Exercise 7.1</title>
+<link rel="StyleSheet" href="../css/site.css" type="text/css" media="screen" />
+</head>
+<body>
+<div id="wrapper">
+<div id="header">
+<a href="../index.html"><img src="../images/home.png" id="home" alt="Link to home page" /></a>
+<h1>Hints for Exercise 7.1</h1>
+<br class="clearFloat"/>
+</div>
+<div id="content">
+<div>
+<h2>Hints for Exercise</h2>
+<table id="hints">
+<tr>
+<th>Step</th>
+<th>Code</th>
+</tr>
+
+<!-- Row -->
+<tr>
+<td>TODO 11</td>
+<td><pre>
+String jsonData = toJSON(expenses);
+</pre></td>
+</tr>
+<!-- End Row -->
+
+<!-- Row -->
+<tr>
+<td>TODO 12</td>
+<td><pre>
+postToWebService(jsonData);
+</pre></td>
+</tr>
+<!-- End Row -->
+
+<!-- Row -->
+<tr>
+<td>TODO 21</td>
+<td><pre>
+JSONArray jExpenses =  Expense.Helper.expenseArrayToJSON(expenses);
+</pre></td>
+</tr>
+<!-- End Row -->
+
+<!-- Row -->
+<tr>
+<td>TODO 22</td>
+<td><pre>
+JSONObject jsonRoot = new JSONObject();
+</pre></td>
+</tr>
+<!-- End Row -->
+
+<!-- Row -->
+<tr>
+<td>TODO 23</td>
+<td><pre>
+jsonRoot.put("expense", jExpenses);
+</pre></td>
+</tr>
+<!-- End Row -->
+
+<!-- Row -->
+<tr>
+<td>TODO 24</td>
+<td><pre>
+return jsonRoot.toString();
+</pre></td>
+</tr>
+<!-- End Row -->
+
+<!-- Row -->
+<tr>
+<td>TODO 31</td>
+<td><pre>
+URL serviceUrl = new URL("http://10.0.2.2:8080/ExpensesServer/rest/ExpenseServer/putExpenses");
+</pre></td>
+</tr>
+<!-- End Row -->
+
+<!-- Row -->
+<tr>
+<td>TODO 32</td>
+<td><pre>
+HttpURLConnection urlConnection = (HttpURLConnection)serviceUrl.openConnection();
+</pre></td>
+</tr>
+<!-- End Row -->
+<!-- Row -->
+<tr>
+<td>TODO 33</td>
+<td><pre>
+urlConnection.setRequestMethod("POST");
+</pre></td>
+</tr>
+<!-- End Row -->
+
+<!-- Row -->
+<tr>
+<td>TODO 34</td>
+<td><pre>
+urlConnection.setDoOutput(true);
+</pre></td>
+</tr>
+<!-- End Row -->
+
+<!-- Row -->
+<tr>
+<td>TODO 35</td>
+<td><pre>
+urlConnection.setRequestProperty("content/type","application/json");
+</pre></td>
+</tr>
+<!-- End Row -->
+
+<!-- Row -->
+<tr>
+<td>TODO 36</td>
+<td><pre>
+OutputStream output = urlConnection.getOutputStream();
+</pre></td>
+</tr>
+<!-- End Row -->
+
+<!-- Row -->
+<tr>
+<td>TODO 37</td>
+<td><pre>
+output.write(msgBody.getBytes());
+</pre></td>
+</tr>
+<!-- End Row -->
+<!-- Row -->
+<tr>
+<td>TODO 38</td>
+<td><pre>
+output.write(msgBody.getBytes());
+</pre></td>
+</tr>
+<!-- End Row -->
+<!-- Row -->
+<tr>
+<td>TODO 38a</td>
+<td><pre>
+Log.i(TAG, "HTTP response code from service: " + responseCode);
+</pre></td>
+</tr>
+<!-- End Row -->
+
+<!-- Row -->
+<tr>
+<td>TODO 39</td>
+<td><pre>
+urlConnection.disconnect();
+</pre></td>
+</tr>
+<!-- End Row -->
+</table>
+
+</div>
+</div><!-- Content -->
+<div id="footer" class="clearBoth">
+<br /><br /><br />
+</div>
+</div><!-- Wrapper -->
+
+</body>
+</html>

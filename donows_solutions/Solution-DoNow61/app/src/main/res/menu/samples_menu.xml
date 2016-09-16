@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:id="@+id/menu_camera_launcher" android:title="Camera Launcher"></item>  
+    <item android:id="@+id/menu_database" android:title="Database"></item>
+    <item android:id="@+id/menu_dialog" android:title="Dialog"></item>
+    <item android:id="@+id/menu_event_handler" android:title="Event Handler"></item>
+    <item android:id="@+id/menu_frame" android:title="Frame"></item>    
+    <item android:id="@+id/menu_gallery" android:title="Gallery"></item>
+	<item android:id="@+id/menu_home" android:title="Home"></item>    
+    <item android:id="@+id/menu_http_client" android:title="Http Request"></item>
+    <item android:id="@+id/menu_json_test" android:title="JSON"></item>
+    <item android:id="@+id/menu_menu" android:title="Menu"></item>
+    <item android:id="@+id/menu_notification" android:title="Notification"></item>
+    <item android:id="@+id/menu_stations_list" android:title="Station List"></item>    
+    <item android:id="@+id/menu_stations_list_cp" android:title="Station List (CP)"></item>  
+    <item android:id="@+id/menu_threads" android:title="Threading"></item>
+    <item android:id="@+id/menu_toast" android:title="Toast"></item>
+    <item android:id="@+id/menu_versions" android:title="Versions"></item>    
+
+</menu>

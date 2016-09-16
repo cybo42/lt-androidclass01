@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="hello">Hello World, HttpClientActivity!</string>
+    <string name="app_name">DoNow71</string>
+    <string name="str_html_error">&lt;html&gt;&lt;body&gt;&lt;h1&gt;%s&lt;/h1&gt;&lt;/body&gt;&lt;/html&gt;</string>
+</resources>

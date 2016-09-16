@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+
+Landscape layout that includes the TRASH can. ONly on V11 plus as we need Drag and Drop
+Note on ID's: To ensure the content of R.java is well organized and to avoid ambiguity, the following convention has bee adopted:
+The control ID's are constructed like this:
+LAYOUTNAME_CONTROLTYPE_CONTROLID : eg expEdt_tv_Date
+For this form, the LAYOUTNAME is expEdt (expenses edit)
+The control types are:
+tv: TextView
+et: EditText
+bt: Button
+ib: ImageButton
+
+Where TextView's are used, it is not strictly necessary to use this labeling scheme as they are not likely to be accessed in the code. Doing so just keeps
+R.java organized.
+
+ -->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background">
+
+ <LinearLayout
+     xmlns:android="http://schemas.android.com/apk/res/android"
+     android:layout_width="match_parent"
+     android:layout_height="match_parent"
+     android:layout_weight="1"
+     android:orientation="vertical" >
+ 
+    <FrameLayout 
+            android:id="@+id/frag_expense_list"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"            
+            />
+    <ImageView android:layout_height="wrap_content" android:id="@+id/main_iv_trash" 
+    	android:layout_width="wrap_content" android:src="@drawable/trash_can" 
+    		android:layout_gravity="center_horizontal" android:layout_margin="5dip"></ImageView>
+</LinearLayout>   
+
+<FrameLayout
+    android:id="@+id/frag_expense_details"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_weight="1"
+    android:layout_margin="10dip" >
+
+           </FrameLayout>  
+</LinearLayout>

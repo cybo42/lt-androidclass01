@@ -1,0 +1,43 @@
+9
+
+dir
+472
+svn://bad-wolf/crs2771/trunk/tests/Test-Ex53/res
+svn://bad-wolf/crs2771
+
+
+
+2011-07-20T15:10:51.917654Z
+472
+mjrw
+
+
+svn:special svn:externals svn:needs-lock
+
+
+
+
+
+
+
+
+
+
+
+8442bff9-b800-4660-a2b6-2af94bcc0550
+
+drawable-hdpi
+dir
+
+drawable-ldpi
+dir
+
+drawable-mdpi
+dir
+
+layout
+dir
+
+values
+dir
+

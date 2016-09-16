@@ -1,0 +1,217 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<title>Hints for Exercise 5.2</title>
+<link rel="StyleSheet" href="../css/site.css" type="text/css" media="screen" />
+</head>
+<body>
+<div id="wrapper">
+<div id="header">
+<a href="../index.html"><img src="../images/home.png" id="home" alt="Link to home page" /></a>
+<h1>Hints for Exercise 5.2</h1>
+<br class="clearFloat"/>
+</div>
+<div id="content">
+<div>
+<h2>Hints for Exercise</h2>
+<table id="hints">
+<tr>
+<th>Step</th>
+<th>Code</th>
+</tr>
+<!-- Row -->
+<tr>
+<td>TODO 1</td>
+<td><pre>
+public class ExpensesListActivity 
+				extends AppCompatActivity 
+				implements LoaderManager.LoaderCallbacks<Cursor>
+</pre></td>
+</tr>
+<!-- End Row -->
+<!-- Row -->
+<tr>
+<td>TODO 2</td>
+<td><pre>
+Intent intent = getIntent();
+</pre></td>
+</tr>
+<!-- End Row -->
+<!-- Row -->
+<tr>
+<td>TODO 3</td>
+<td><pre>
+if (mBaseUri == null) {
+	mBaseUri =Expense.ExpenseItem.CONTENT_URI;
+}
+</pre></td>
+</tr>
+<!-- End Row -->
+<!-- Row -->
+<tr>
+<td>TODO 6,7</td>
+<td><pre>
+mAdapter = new SimpleCursorAdapter(this, 
+		R.layout.expenses_list_item, 
+		null, 
+		dataColumns, 						
+		viewIDs, 
+		0);
+</pre></td>
+</tr>
+<!-- End Row -->
+<!-- Row -->
+<tr>
+<td>TODO 8</td>
+<td><pre>
+getLoaderManager().initLoader(0, null, this);
+</pre></td>
+</tr>
+<!-- End Row -->
+<!-- Row -->
+<tr>
+<td>TODO 11</td>
+<td><pre>
+		return new CursorLoader(this, mBaseUri, 
+												
+				Expense.ExpenseItem.LIST_PROJECTION, 
+				null, 
+				null, 
+				Expense.ExpenseItem.DEFAULT_SORT_ORDER);
+</pre></td>
+</tr>
+<!-- End Row -->
+<!-- Row -->
+<tr>
+<td>TODO 12</td>
+<td><pre>
+mAdapter.swapCursor(data);
+</pre></td>
+</tr>
+<!-- End Row -->
+<!-- Row -->
+<tr>
+<td>TODO 13</td>
+<td><pre>
+mAdapter.swapCursor(null);
+</pre></td>
+</tr>
+<!-- End Row -->
+<!-- Row -->
+<tr>
+<td>TODO 21</td>
+<td><pre>
+Uri itemUri = ContentUris.withAppendedId(mBaseUri , id);
+</pre></td>
+</tr>
+<!-- End Row -->
+<!-- Row -->
+<tr>
+<td>TODO 22</td>
+<td><pre>
+launchingIntent.setData(itemUri);
+</pre></td>
+</tr>
+<!-- End Row -->
+<!-- Row -->
+<tr>
+<td>TODO 23</td>
+<td><pre>
+startActivity(launchingIntent);
+</pre></td>
+</tr>
+<!-- End Row -->
+
+<!-- Row -->
+<tr>
+<td>TODO 41</td>
+<td><pre>
+getLoaderManager().initLoader(0, null, this);
+</pre></td>
+</tr>
+<!-- End Row -->
+
+<!-- Row -->
+<tr>
+<td>TODO 45</td>
+<td><pre>
+return new CursorLoader(this, 
+		mBaseUri, 				
+		Expense.ExpenseItem.FULL_PROJECTION,    
+		null,                             		
+		null,                             		
+		Expense.ExpenseItem.DEFAULT_SORT_ORDER  
+		);
+</pre></td>
+</tr>
+<!-- End Row -->
+<!-- Row -->
+<tr>
+<td>TODO 47</td>
+<td><pre>
+loadExpenseDataFromCursor();
+</pre></td>
+</tr>
+<!-- End Row -->
+<!-- Row -->
+<tr>
+<td>TODO 51 </td>
+<td><pre>
+if (mCursor.moveToFirst()) {
+</pre></td>
+</tr>
+<!-- End Row -->
+<!-- Row -->
+<tr>
+<td>TODO 53 </td>
+<td><pre>
+long lDate = Long.parseLong(mCursor.getString(2));
+</pre></td>
+</tr>
+<!-- End Row -->
+<!-- Row -->
+<tr>
+<td>TODO 61</td>
+<td><pre>
+saveExpenseItem();
+</pre></td>
+</tr>
+<!-- End Row -->
+<!-- Row -->
+<tr>
+<td>TODO 71</td>
+<td><pre>
+values.put(Expense.ExpenseItem.COLUMN_NAME_DESCRIPTION, 
+					mDescription.getText().toString());
+</pre></td>
+</tr>
+<!-- End Row -->
+<!-- Row -->
+<tr>
+<td>TODO 72</td>
+<td><pre>
+Uri newItemUri = getContentResolver().insert(mBaseUri, values);
+</pre></td>
+</tr>
+<!-- End Row -->
+<!-- Row -->
+<tr>
+<td>TODO 73</td>
+<td><pre>
+getContentResolver().update(getIntent().getData(), values, null, null);
+</pre></td>
+</tr>
+<!-- End Row -->
+
+
+</table>
+
+</div>
+</div><!-- Content -->
+<div id="footer" class="clearBoth">
+<br /><br /><br />
+</div>
+</div><!-- Wrapper -->
+
+</body>
+</html>

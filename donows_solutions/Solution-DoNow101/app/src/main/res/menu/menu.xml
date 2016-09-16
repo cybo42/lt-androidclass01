@@ -1,0 +1,14 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:app="http://schemas.android.com/apk/res-auto"
+xmlns:tools="http://schemas.android.com/tools" tools:context=".ExpensesListActivity">
+    <item android:id="@+id/menu_add" android:title="@string/menu_str_add"
+    android:icon="@drawable/ic_menu_add" app:showAsAction="always"></item>
+    <item android:id="@+id/menu_delete"
+        android:icon="@drawable/ic_menu_delete" android:title="@string/menu_str_delete" app:showAsAction="always"></item>
+    <item android:id="@+id/menu_sync" android:title="@string/menu_str_sync"
+        android:icon="@drawable/ic_menu_refresh"
+        app:showAsAction="always"></item>
+    <item android:id="@+id/menu_export"
+        android:icon="@drawable/ic_menu_export" android:title="@string/menu_str_export"
+        app:showAsAction="ifRoom"></item>
+</menu>
