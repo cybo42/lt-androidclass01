@@ -1,16 +1,13 @@
 package com.ltree.expenses;
 
-import android.Manifest;
 import android.annotation.TargetApi;
 import android.content.ClipData;
 import android.content.ContentUris;
 import android.content.Intent;
-import android.content.pm.PackageManager;
 import android.graphics.Color;
 import android.net.Uri;
 import android.os.Build;
 import android.os.Bundle;
-
 import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentTransaction;
 import android.support.v4.app.ListFragment;
@@ -26,9 +23,6 @@ import android.widget.ImageView;
 import android.widget.Toast;
 
 import com.ltree.expenses.data.Expense;
-
-import java.util.ArrayList;
-import java.util.List;
 
 
 public class HomeActivity extends AppCompatActivity implements ExpensesListFragment.OnFragmentInteractionListener {

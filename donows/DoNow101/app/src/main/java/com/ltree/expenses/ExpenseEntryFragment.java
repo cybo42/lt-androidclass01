@@ -155,9 +155,9 @@ public class ExpenseEntryFragment extends Fragment implements LoaderManager.Load
 
         mMapButton.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {
-//                Intent intent = new Intent(getActivity(), ExpensesMapActivity.class);
-//                intent.putExtra("FIX", mLocation);
-//                startActivity(intent);
+                Intent intent = new Intent(getActivity(), ExpensesMapActivity.class);
+                intent.putExtra("FIX", mLocation);
+                startActivity(intent);
             }
         });
 
@@ -420,10 +420,10 @@ public class ExpenseEntryFragment extends Fragment implements LoaderManager.Load
 			
 			// Get the LocationManager information
 			// TODO Complete the code to return a LOCATION_SERVICE
-	    	LocationManager locMan = (LocationManager) getActivity().getSystemService(Context.__________);
+	    	LocationManager locMan = (LocationManager) getActivity().getSystemService(Context.LOCATION_SERVICE);
 	    	// Get the last known position from the GPS provider if there is one
 	    	// TODO Complete the code to get the LastKnownLocation from the GPS_PROVIDER
-	    	Location lastKnownLocation = locMan.getLastKnownLocation(LocationManager.__________);
+	    	Location lastKnownLocation = locMan.getLastKnownLocation(LocationManager.GPS_PROVIDER);
 	    	if(null != lastKnownLocation){
 	    		storePosition(lastKnownLocation);
 	    	}
@@ -433,7 +433,7 @@ public class ExpenseEntryFragment extends Fragment implements LoaderManager.Load
 		    	    public void onLocationChanged(Location location) {
 			    	      // Called when a new location is found by the network location provider.
 		    	    		// TODO Call storePosition when a location change is received
-			    	    	________(location);
+			    	    	storePosition(location);
 			    	    }
 
 			   	    public void onStatusChanged(String provider, int status, Bundle extras) {}

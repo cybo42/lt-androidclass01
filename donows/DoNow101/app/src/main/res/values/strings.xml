@@ -28,5 +28,6 @@
     <string name="expEdt_str_map">Show Map</string>
     <string name="expEdt_str_desc_receipt_but">Capture the receipt </string>
     <string name="expEdt_str_desc_show_receipt">Picture of the receipt</string>
+    <string name="title_activity_expenses_map">Map</string>
 
 </resources>
